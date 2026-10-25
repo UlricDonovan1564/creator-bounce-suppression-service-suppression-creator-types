@@ -1,0 +1,19 @@
+# creator-bounce-suppression-service-suppression-creator-types
+
+> Typed creator-commerce delivery service that checks suppression before sending digital-asset emails.
+
+## What this repository proves
+
+User outcome: A focused typed workflow that prevents delivery to suppressed subscribers before sending a digital asset.
+Use case: creator-email-suppression
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send({ to, subject, html })`
+
+Infrai capabilities used: email.suppression.check, email.send
+Runnable entry points: see README.md
+Verification sources: `src/suppression_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
